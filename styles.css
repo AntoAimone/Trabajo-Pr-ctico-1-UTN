@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 100px; /* Ajustar el tamaño que mejor quede*/
+}
+
+.two-columns {
+    display: flex;
+}
+
+.column-text {
+    flex: 1; /* La columna de texto ocupará el espacio restante */
+}
+
+.column-image {
+    flex: 1; /* La columna de imagen ocupará el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-image img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+}

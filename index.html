@@ -6,14 +6,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <h1>Kiosco Kilómetro 1</h1>
-        <h2>Km 1 </h2>
-        <h3>¡Veni a visitarnos, estamos 24hs!</h3>
-        <h2>Que ofrecemos:</h2>
 
-    </main>
+    <header>
+        <div class="logo">
+            <img src="/logo_km1.png" alt="Logo Kilómetro 1">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="inicio" class="two-columns">
+        <div class="column-text">
+            <h2>Bienvenido a Kilómetro 1</h2>
+            <p>Kilómetro 1 es mucho más que un simple kiosco; es tu lugar de confianza para satisfacer todas tus necesidades diarias. Desde deliciosos snacks y bebidas refrescantes hasta productos de higiene y artículos útiles, ofrecemos una amplia variedad de productos que se adaptan a tu estilo de vida. Nuestra atención amigable y ambiente acogedor hacen que cada visita sea una experiencia única. ¡Ven y descubre todo lo que Kilómetro 1 tiene para ofrecerte!</p>
+        </div>
+        <div class="column-image">
+            <img src="/foto_frentekm1.png" alt="Frente Kilómetro 1">
+        </div>
+    </section>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <!-- Aca van cards con los productos -->
+    </section>
+
+    <section id="ubicacion">
+        <h2>Encuéntranos</h2>
+        <p>Podes acercarte a cualqueira de nuestras sucursales.</p>
+        <li><p>59 y 62</p></li>
+        <li><p>59 y 44</p></li>
+        <li><p>59 y 30</p></li>
+        <li><p>75 y 28</p></li>
+        <li><p>91 y 32</p></li>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Contáctanos:</p>
+        <form action="https://formspree.io/f/xleqvnrv" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>  
     
 </body>
-<footer>Nosotros y dónde encontrarnos</footer>
+
+<footer></footer>
 </html>
