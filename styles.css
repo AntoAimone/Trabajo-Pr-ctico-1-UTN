@@ -1,7 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Poetsen One', sans-serif;
     padding: 0;
+    margin: 0;
+    background-color: #f49856;
+    color: #333;
 }
 
 header {
@@ -29,24 +31,143 @@ nav ul li a {
 }
 
 .logo img {
-    max-width: 100px; /* Ajustar el tamaño que mejor quede*/
+    max-width: 100px;
 }
 
-.two-columns {
+.main-content {
+    padding: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Sección de Inicio */
+#inicio {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .column-text {
-    flex: 1; /* La columna de texto ocupará el espacio restante */
+    flex: 1 0 60%; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 60% */
+    margin-right: 20px;
 }
 
 .column-image {
-    flex: 1; /* La columna de imagen ocupará el espacio restante */
+    flex: 1 0 30%; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 30% */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .column-image img {
-    max-width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+/* Sección de Productos */
+#productos {
+    padding: 2rem 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h3, .card p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección de Ubicación */
+#ubicacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ubicacion li {
+    margin-bottom: 10px;
+}
+
+/* Sección de Contacto */
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#contacto label {
+    font-weight: bold;
+}
+
+#contacto textarea {
+    height: 100px;
+}
+
+#contacto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .column-text, .column-image {
+        flex: 1 0 100%;
+        margin-right: 0;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px);
+    }
 }
