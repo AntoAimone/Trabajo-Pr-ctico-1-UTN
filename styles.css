@@ -2,7 +2,7 @@ body {
     font-family: 'Poetsen One', sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f49856;
+    background-color: #ebbff9;
     color: #333;
 }
 
@@ -104,15 +104,7 @@ h2 {
     padding: 0;
 }
 
-/* Sección de Ubicación */
-#ubicacion ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-#ubicacion li {
-    margin-bottom: 10px;
-}
 
 /* Sección de Contacto */
 #contacto form {
@@ -143,13 +135,27 @@ h2 {
 }
 
 /* Footer */
+
+/* Sección de Ubicación en Footer*/
+#ubicacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ubicacion li {
+    margin-bottom: 10px;
+}
 footer {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
-
+.whatsapp-icon {
+    width: 40px; /* Tamaño del icono de WhatsApp */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-right: 10px; /* Espacio entre el icono de WhatsApp y otros elementos del footer */
+}
 /* Media Queries */
 @media (max-width: 768px) {
     .column-text, .column-image {
