@@ -151,11 +151,33 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+/*No termino de entender bien como se usa esto*/
+.curved {
+    position: relative;
+    background: #555;
+    height: 50vh;
+  }
+  
+  .curved::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background: #fff;
+    height: 20%;
+  }
+
 .whatsapp-icon {
     width: 40px; /* Tamaño del icono de WhatsApp */
     height: auto; /* Altura ajustada automáticamente */
     margin-right: 10px; /* Espacio entre el icono de WhatsApp y otros elementos del footer */
 }
+
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     .column-text, .column-image {
